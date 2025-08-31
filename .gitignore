@@ -1,0 +1,10 @@
+node_modules/
+*.log
+.vscode/
+*.ini
+*.lnk
+*.dat
+*.bif
+*.ms
+.DS_Store
+Thumbs.db
