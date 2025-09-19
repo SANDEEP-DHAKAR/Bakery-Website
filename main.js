@@ -1,9 +1,8 @@
-const navlist = document.getElementById('navlist');
-const hambuger = document.getElementById('hambuger');
+//  <!-- ✅ Hamburger toggle -->
+const hamburger = document.getElementById("hamburger");
+const navlist = document.getElementById("navlist");
 
-// Click Event
-
-hambuger.addEventListener('click', () => {
-
-    navlist.classList.toggle('navlist-active')
-})
+hamburger.addEventListener("click", () => {
+    navlist.classList.toggle("navlist-active");
+    hamburger.classList.toggle("active");
+});

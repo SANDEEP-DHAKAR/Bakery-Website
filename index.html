@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bakery website</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+
+    <!-- ✅ Fixed Font Awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -21,24 +22,12 @@
             </div>
 
             <ul class="navlist" id="navlist">
-                <li>
-                    <a href="#" class="navlinks active">Home</a>
-                </li>
-                <li>
-                    <a href="#" class="navlinks">About</a>
-                </li>
-                <li>
-                    <a href="#" class="navlinks">Menu</a>
-                </li>
-                <li>
-                    <a href="#" class="navlinks">Restourent</a>
-                </li>
-                <li>
-                    <a href="#" class="navlinks">Order</a>
-                </li>
-                <li>
-                    <a href="#" class="navlinks">Contact</a>
-                </li>
+                <li><a href="#" class="navlinks active">Home</a></li>
+                <li><a href="#about" class="navlinks">About</a></li>
+                <li><a href="#menu" class="navlinks">Menu</a></li>
+                <li><a href="#restaurant" class="navlinks">Restaurant</a></li>
+                <li><a href="#order" class="navlinks">Order</a></li>
+                <li><a href="#contact" class="navlinks">Contact</a></li>
             </ul>
 
             <div class="nav-icons">
@@ -65,8 +54,7 @@
         <section class="hero-section container mint-glow">
             <div class="content">
                 <div class="watch">
-                    <a href="#" class="icons-link"><i class="fa-solid fa-play"></i>
-                    </a>
+                    <a href="#" class="icons-link"><i class="fa-solid fa-play"></i></a>
                     <h3>Watch Video</h3>
                 </div>
                 <h1>The Perfect Cake Everyday!</h1>
@@ -74,19 +62,18 @@
                     enim rem laborum, repellat, ratione esse ad qui.</p>
 
                 <div class="btn-container">
-                    <button>Read More</button>
-                    <button data-type="bordered-btn">Order Now</button>
+                    <button type="button">Read More</button>
+                    <button type="button" data-type="bordered-btn">Order Now</button>
                 </div>
             </div>
 
             <div class="image-container">
-                <img src="images/cake.png">
+                <img src="images/cake.png" alt="Delicious cake">
             </div>
         </section>
 
         <!--Store Section-->
-        <section class="other-section container">
-
+        <section class="other-section container" id="menu">
             <div class="column-container">
                 <h2>Welcome To Our Store</h2>
                 <p data-type="centered-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam at
@@ -94,19 +81,19 @@
 
                 <div class="card-container">
                     <div class="card" data-type="category">
-                        <img src="images/pastery.png">
+                        <img src="images/pastery.png" alt="Cake">
                         <h3>Cake</h3>
                     </div>
                     <div class="card" data-type="category">
-                        <img src="images/sandwich.png">
-                        <h3>Sandewich</h3>
+                        <img src="images/sandwich.png" alt="Sandwich">
+                        <h3>Sandwich</h3>
                     </div>
                     <div class="card" data-type="category">
-                        <img src="images/cookie.png">
+                        <img src="images/cookie.png" alt="Cookies">
                         <h3>Cookies</h3>
                     </div>
                     <div class="card" data-type="category">
-                        <img src="images/bread.png">
+                        <img src="images/bread.png" alt="Bread">
                         <h3>Bread</h3>
                     </div>
                 </div>
@@ -114,11 +101,10 @@
         </section>
 
         <!--About Section-->
-        <section class="other-section container">
-
+        <section class="other-section container" id="about">
             <div class="row-container">
                 <div class="image-container">
-                    <img src="images/cupcake.jpg">
+                    <img src="images/cupcake.jpg" alt="Cupcake">
                 </div>
 
                 <div class="content">
@@ -127,7 +113,7 @@
                         eos, deleniti officiis, eligendi nisi ipsam magnam consequatur. Pariatur.</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, debitis! Tempore, quaerat
                         asperiores! Modi?</p>
-                    <button>Read More</button>
+                    <button type="button">Read More</button>
                 </div>
             </div>
         </section>
@@ -138,10 +124,11 @@
                 <h2>Our Featured Food</h2>
                 <p data-type="centered-txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam qui, omnis
                     et dicta ex recusandae dolor molestias cupiditate modi fugit.</p>
+
                 <div class="card-container">
                     <div class="card" data-type="item">
                         <div class="image-part">
-                            <img src="images/birthday cake.jpg">
+                            <img src="images/birthday cake.jpg" alt="Birthday Cake">
                         </div>
                         <div class="detail">
                             <h4>$15.00</h4>
@@ -150,7 +137,7 @@
                     </div>
                     <div class="card" data-type="item">
                         <div class="image-part">
-                            <img src="images/muffins.jpg">
+                            <img src="images/muffins.jpg" alt="Muffins">
                         </div>
                         <div class="detail">
                             <h4>$15.00</h4>
@@ -159,7 +146,7 @@
                     </div>
                     <div class="card" data-type="item">
                         <div class="image-part">
-                            <img src="images/waffles.jpg">
+                            <img src="images/waffles.jpg" alt="Waffles">
                         </div>
                         <div class="detail">
                             <h4>$15.00</h4>
@@ -168,51 +155,50 @@
                     </div>
                     <div class="card" data-type="item">
                         <div class="image-part">
-                            <img src="images/pancake.jpg">
+                            <img src="images/pancake.jpg" alt="Pancake">
                         </div>
                         <div class="detail">
                             <h4>$15.00</h4>
                             <h4>Pancake</h4>
                         </div>
                     </div>
+                </div>
 
-                    <div class="card-container">
-
-                        <div class="card" data-type="item">
-                            <div class="image-part">
-                                <img src="images/piece cake.jpg">
-                            </div>
-                            <div class="detail">
-                                <h4>$15.00</h4>
-                                <h4>Piece Cake</h4>
-                            </div>
+                <div class="card-container">
+                    <div class="card" data-type="item">
+                        <div class="image-part">
+                            <img src="images/piece cake.jpg" alt="Piece Cake">
                         </div>
-                        <div class="card" data-type="item">
-                            <div class="image-part">
-                                <img src="images/cookie.png">
-                            </div>
-                            <div class="detail">
-                                <h4>$15.00</h4>
-                                <h4>Chocolote Cookies</h4>
-                            </div>
+                        <div class="detail">
+                            <h4>$15.00</h4>
+                            <h4>Piece Cake</h4>
                         </div>
-                        <div class="card" data-type="item">
-                            <div class="image-part">
-                                <img src="images/cake.png">
-                            </div>
-                            <div class="detail">
-                                <h4>$15.00</h4>
-                                <h4>Rospberry Cake</h4>
-                            </div>
+                    </div>
+                    <div class="card" data-type="item">
+                        <div class="image-part">
+                            <img src="images/cookie.png" alt="Chocolate Cookies">
                         </div>
-                        <div class="card" data-type="item">
-                            <div class="image-part">
-                                <img src="images/donut.jpg">
-                            </div>
-                            <div class="detail">
-                                <h4>$15.00</h4>
-                                <h4>Donut</h4>
-                            </div>
+                        <div class="detail">
+                            <h4>$15.00</h4>
+                            <h4>Chocolate Cookies</h4>
+                        </div>
+                    </div>
+                    <div class="card" data-type="item">
+                        <div class="image-part">
+                            <img src="images/cake.png" alt="Raspberry Cake">
+                        </div>
+                        <div class="detail">
+                            <h4>$15.00</h4>
+                            <h4>Raspberry Cake</h4>
+                        </div>
+                    </div>
+                    <div class="card" data-type="item">
+                        <div class="image-part">
+                            <img src="images/donut.jpg" alt="Donut">
+                        </div>
+                        <div class="detail">
+                            <h4>$15.00</h4>
+                            <h4>Donut</h4>
                         </div>
                     </div>
                 </div>
@@ -222,60 +208,53 @@
         <!-- App Section -->
         <section class="other-section container">
             <div class="row-container">
-
                 <div class="content">
                     <h2>App Is Soon <br>On App Store</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, qui? Minima ullam, animi error
                         minus ratione perferendis iusto similique iste explicabo. Ullam.</p>
                     <div class="app-img">
-                        <img src="images/app store.png">
-                        <img src="images/play store.png">
+                        <img src="images/app store.png" alt="App Store">
+                        <img src="images/play store.png" alt="Play Store">
                     </div>
                 </div>
 
-                <div class="image-containet">
-                    <img src="images/bakery app.png">
+                <div class="image-container">
+                    <img src="images/bakery app.png" alt="Bakery App">
                 </div>
-
             </div>
-
         </section>
 
         <!-- Best Food Section -->
         <section class="other-section container">
             <div class="row-container">
-
                 <div class="image-container">
-                    <img src="images/creamy pancake.png">
+                    <img src="images/creamy-pancake.png" alt="Creamy Pancake">
                 </div>
 
                 <div class="content">
                     <h2>Best Sell Food In Week!</h2>
-
                     <div class="rating">
                         <h4>$15.00</h4>
-                        <img src="images/five star.png">
+                        <img src="images/five star.png" alt="5 star rating">
                     </div>
-
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores dolore velit
                         possimus soluta aperiam dolorum similique nulla officiis quis, maiores adipisci.</p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis atque expedita sit dolores!
                     </p>
-                    <button>Buy Now</button>
+                    <button type="button">Buy Now</button>
                 </div>
             </div>
         </section>
 
-        <!-- Newslatter Section -->
-
+        <!-- Newsletter Section -->
         <section class="other-section container">
             <div class="column-container">
-                <h2>Subscribe Our Newslatter</h2>
+                <h2>Subscribe Our Newsletter</h2>
                 <p data-type="centered-txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam qui, omnis
                     et dicta ex recusandae dolor molestias cupiditate modi fugit.</p>
 
-                <form class="form-container">
-                    <input type="email" name="email" id="email" autocomplete="off" placeholder="Email Address">
+                <form class="form-container" action="#">
+                    <input type="email" name="email" id="email" autocomplete="off" placeholder="Email Address" required>
                     <input type="submit" value="Subscribe" class="form-btn">
                 </form>
             </div>
@@ -283,132 +262,77 @@
     </main>
 
     <!--Footer part-->
-    <footer>
+    <footer id="contact">
         <div class="column-container container mint-glow">
             <div class="card-container">
 
                 <div class="column">
                     <div class="logo">
-                        <a href="#" class="logo-txt">Cake<span>ry.</span>
-                        </a>
+                        <a href="#" class="logo-txt">Cake<span>ry.</span></a>
                     </div>
-
                     <p data-type="balanced-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ab
-                        delectus tenetur magni
-                        nobis? Eius.</p>
-
+                        delectus tenetur magni nobis? Eius.</p>
                     <div class="icons">
-                        <a href="#" class="icons-link">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="icons-link">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                        <a href="#" class="icons-link">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="#" class="icons-link">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
+                        <a href="#" class="icons-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="icons-link"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="icons-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="icons-link"><i class="fa-brands fa-linkedin-in"></i></a>
                     </div>
                 </div>
 
                 <div class="column">
-                    <h4>Resouces</h4>
+                    <h4>Resources</h4>
                     <ul class="footer-lists">
-                        <li>
-                            <a href="#" class="footer-links">Resouces</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-links">Contact Us</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-links">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-links">Email Support</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-links">API Documention</a>
-                        </li>
+                        <li><a href="#" class="footer-links">Resources</a></li>
+                        <li><a href="#" class="footer-links">Contact Us</a></li>
+                        <li><a href="#" class="footer-links">FAQ</a></li>
+                        <li><a href="#" class="footer-links">Email Support</a></li>
+                        <li><a href="#" class="footer-links">API Documentation</a></li>
                     </ul>
                 </div>
 
                 <div class="column">
                     <h4>Menu</h4>
                     <ul class="footer-lists">
-                        <li>
-                            <a href="#" class="footer-links">Cup Cake</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-links">Cookies</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-links">Sandewich</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-links">Bread</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-links">Biscuits</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-links">Rospberry Cake</a>
-                        </li>
+                        <li><a href="#" class="footer-links">Cup Cake</a></li>
+                        <li><a href="#" class="footer-links">Cookies</a></li>
+                        <li><a href="#" class="footer-links">Sandwich</a></li>
+                        <li><a href="#" class="footer-links">Bread</a></li>
+                        <li><a href="#" class="footer-links">Biscuits</a></li>
+                        <li><a href="#" class="footer-links">Raspberry Cake</a></li>
                     </ul>
                 </div>
 
                 <div class="column">
                     <h4>Services</h4>
                     <ul class="footer-lists">
-                        <li>
-                            <a href="#" class="footer-links">Home Delivery</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-links">Office</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-links">Event</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-links">Birthday</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-links">Reastourent</a>
-                        </li>
+                        <li><a href="#" class="footer-links">Home Delivery</a></li>
+                        <li><a href="#" class="footer-links">Office</a></li>
+                        <li><a href="#" class="footer-links">Event</a></li>
+                        <li><a href="#" class="footer-links">Birthday</a></li>
+                        <li><a href="#" class="footer-links">Restaurant</a></li>
                     </ul>
                 </div>
 
                 <div class="column">
                     <h4>Contact</h4>
                     <ul class="footer-lists">
-                        <li>
-                            <a href="#" class="icons-link">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </a>
+                        <li><i class="fa-solid fa-location-dot"></i>
                             <a href="#" class="footer-links">ABC street Karachi</a>
                         </li>
-                        <li>
-                            <a href="#" class="icons-link">
-                                <i class="fa-solid fa-phone"></i>
-                            </a>
-                            <a href="#" class="footer-links">+99 123 544 990</a>
+                        <li><i class="fa-solid fa-phone"></i>
+                            <a href="tel:+99123544990" class="footer-links">+99 123 544 990</a>
                         </li>
-                        <li>
-                            <a href="#" class="icons-link">
-                                <i class="fa-solid fa-envelope"></i>
-                            </a>
-                            <a href="#" class="footer-links">info@example.com</a>
+                        <li><i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:info@example.com" class="footer-links">info@example.com</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
             <div class="line"></div>
-            <h4>&copy;Copyright All Right Reserved</h4>
-
+            <h4>&copy; Copyright All Right Reserved</h4>
         </div>
-
     </footer>
 
     <script src="main.js"></script>

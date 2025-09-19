@@ -19,7 +19,7 @@
 
 /* Header Part */
 
-.logo{
+.logo {
     z-index: 6;
 }
 
@@ -40,7 +40,13 @@ span {
 .navlist {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
+    transition: .5s ease-in-out;
+}
+
+.navlist-active {
+    transform: translateX(0%);
 }
 
 li {
@@ -143,12 +149,11 @@ header {
 
 img {
     max-width: 100%;
-
 }
 
 h1 {
     font-size: 3.5rem;
-    line-break: 4rem;
+    line-height: 4rem;
     margin-top: 1rem;
 }
 
@@ -271,7 +276,6 @@ h4 {
 .image-part {
     width: 100%;
     height: 23vh;
-
 }
 
 .image-part img {
@@ -311,7 +315,7 @@ h4 {
     margin-top: 1rem;
 }
 
-/* Newslatter Section */
+/* Newsletter Section */
 
 .form-container {
     margin-top: 1.2rem;
@@ -371,7 +375,6 @@ footer .card-container {
     margin-block: 2rem;
 }
 
-
 /* Media Queries */
 
 @media screen and (max-width: 680px) {
@@ -391,11 +394,11 @@ footer .card-container {
         display: none;
     }
 
-    .hamburger{
+    .hamburger {
         display: block;
     }
 
-    .navlist{
+    .navlist {
         position: absolute;
         top: 0;
         left: 0;
@@ -405,11 +408,10 @@ footer .card-container {
         height: 100vh;
         width: 60%;
         z-index: 5;
-        transform: translate(-100%);
-        transition: .5s ease-in-out;
+        transform: translateX(-100%);
     }
 
-    .navlist-active{
-        transform: translate(0%);
+    .navlist-active {
+        transform: translateX(0%);
     }
 }
